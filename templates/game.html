@@ -1,13 +1,13 @@
  <div id="game-details" ng-init="loadRounds()">
 	<header class="clearfix">
 		<h4 class="pull-left">{{event.title}}</h4>
-		<div class="pull-right" ng-hide="true">
-			<button class="btn btn-small page-switcher" ng-hide="round.pos = 1">
+		<div class="pull-right">
+			<button class="btn btn-small page-switcher" title="Prev" ng-show="round.pos > 1">
 				<a ng-href="#/round/{{round.pos - 1}}">
 					<span class="glyphicon glyphicon-chevron-left"></span>
 				</a>
 			</button>
-			<button class="btn btn-small page-switcher">
+			<button class="btn btn-small page-switcher" title="Next" ng-show="round.pos < 20">
 				<a ng-href="#/round/{{round.pos + 1}}">
 					<span class="glyphicon glyphicon-chevron-right"></span>
 				</a>
