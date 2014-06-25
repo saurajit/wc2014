@@ -1,0 +1,23 @@
+<div ng-init="loadRoundList()">
+	<header>
+		<h4>{{event.title}}</h4>
+	</header>
+
+	<section>
+		<table class="table table-condensed table-striped table-hover">
+			<caption>Number of rounds: {{rounds.length}}</caption>
+			<thead>
+				<tr>
+					<th colspan="2">Match</th>
+					<th>Date</th>
+				</tr>
+			</thead>
+				<tr ng-repeat="round in rounds">
+					<td colspan="2"><a href="#/round/{{round.pos}}">{{round.title}}</a></td>
+					<td>{{round.start_at}}</td>
+				</tr>
+			<tbody>
+			</tbody>
+		</table>
+	</section>
+ </div>

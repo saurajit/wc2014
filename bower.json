@@ -1,0 +1,31 @@
+{
+  "name": "wc2014",
+  "version": "0.0.2",
+  "description": "World Cup 2014 schedule chrome extension",
+  "main": "popup.html",
+  "keywords": [
+    "chrome extension",
+    "world cup 2014",
+		"angular",
+		"angularjs"
+  ],
+  "authors": [
+    "Saurajit"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.18",
+    "jquery": "~2.1.1",
+    "angular-route": "~1.2.18",
+    "angular-ui": "~0.4.0",
+    "bootstrap": "~3.1.1"
+  }
+}

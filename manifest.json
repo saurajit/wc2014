@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "World Cup 2014 schedule",
+	"description": "World Cup 2014 scheduler listing.",
+	"version": "0.0.2",
+	"browser_action": {
+		"default_icon": "icon16.png",
+		"default_popup": "popup.html"
+	},
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon128.png",
+		"128": "icon128.png"
+	},
+	"minimum_chrome_version": "18",
+	"content_security_policy": "script-src 'self'; object-src 'self'",
+	"permissions": [
+		"http://footballdb.herokuapp.com/",
+		"http://*/*",
+		"notifications"
+	]
+}
